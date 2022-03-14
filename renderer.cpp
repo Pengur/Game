@@ -11,9 +11,13 @@ void Renderer::draw(std::vector<GameObject*> objects){
 }
 
 void Renderer::flush(){
-    GameObject* map[mapWidth][mapHeight];
-    GameObject null;
-    null.sign = ' ';
+    char map[mapWidth][mapHeight];
+
+    for(int i = 0; i < mapHeight; i++){
+        for(int j = 0; j < mapWidth; j++){
+            map[j][i] = ' ';
+        }
+    }
 
     for(auto object : objects){
         map[object->x][object->y] = object->sign;
