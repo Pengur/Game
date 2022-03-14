@@ -13,6 +13,7 @@ void Renderer::draw(std::vector<GameObject*> objects){
 void Renderer::flush(){
     char map[mapWidth][mapHeight];
 
+
     for(int i = 0; i < mapHeight; i++){
         for(int j = 0; j < mapWidth; j++){
             map[j][i] = ' ';

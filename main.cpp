@@ -10,6 +10,7 @@ int main() {
     scene.appendObject(player);
 
     char move;
+    scene.initMap();
     scene.appendWalls();
     while(move != 'x'){
         renderer.draw(scene);

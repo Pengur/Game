@@ -9,6 +9,11 @@ public:
     char depth = 0;
 };
 
+#define white 37
+#define red 31
+#define green 32
+#define blue 34
+
 //printf("\x1B[32mTexting\033[0m\t\t");
 //Name            FG  BG
 //Black           30  40
