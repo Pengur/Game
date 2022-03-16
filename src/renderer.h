@@ -14,6 +14,7 @@
 class Renderer {
 public:
     std::vector<GameObject*> objects;
+    void clear();
     void draw(GameObject* object);
     void draw(std::vector<GameObject*> objects);
     void flush(GameObject* camera);

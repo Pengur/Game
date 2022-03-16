@@ -1,5 +1,6 @@
 #pragma once
 #include "gameObject.h"
+#include "colors.h"
 
 class Player : public GameObject{
 public:
@@ -7,7 +8,7 @@ public:
         this->x = 2;
         this->y = 2;
         this->sign = 'P';
-        this->color = 37;
+        this->color = FG_RED;
         this->priority = 3;
     }
 

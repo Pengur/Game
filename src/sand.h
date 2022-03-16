@@ -2,13 +2,13 @@
 #include "gameObject.h"
 #include "colors.h"
 
-class Grass : public GameObject{
+class Sand : public GameObject{
 public:
-    Grass(int x, int y) : GameObject(){
+    Sand(int x, int y) : GameObject(){
         this->x = x;
         this->y = y;
-        this->sign = '#';
-        this->color = GREEN_FG;
+        this->sign = '.';
+        this->color = FG_YELLOW;
         this->priority = 1;
     }
 };

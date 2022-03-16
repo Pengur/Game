@@ -8,7 +8,7 @@ public:
         this->x = x;
         this->y = y;
         this->sign = 'X';
-        this->color = BRIGHT_BLACK_FG;
+        this->color = FG_BLACK;
         this->priority = 5;
     }
 };
