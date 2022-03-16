@@ -6,7 +6,7 @@ public:
     short int y = 0;
     char sign = 0;
     char color = 0;
-    char depth = 0;
+    char priority = 0;
 };
 
 #define white 37

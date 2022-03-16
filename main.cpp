@@ -6,7 +6,7 @@
 int main() {
     Scene scene;
     Renderer renderer;
-    Player *player = new Player;
+    Player *player = new Player();
     scene.appendObject(player);
 
     char move;
@@ -14,11 +14,10 @@ int main() {
     scene.appendWalls();
     while(move != 'x'){
         renderer.draw(scene);
-        renderer.flush();
+        renderer.flush(player);
         std::cin >> move;
         player->move(move);
     }
-
 
     return 0;
 }

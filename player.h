@@ -8,6 +8,7 @@ public:
         this->y = 2;
         this->sign = 'P';
         this->color = 37;
+        this->priority = 3;
     }
 
     void move(char move);

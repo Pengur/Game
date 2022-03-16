@@ -9,5 +9,6 @@ public:
         this->y = y;
         this->sign = '.';
         this->color = YELLOW_FG;
+        this->priority = 1;
     }
 };

@@ -7,7 +7,7 @@
 void Scene::appendObject(GameObject *object) {
     objects.push_back(object);
 }
-void Scene::appendobjects(std::vector<GameObject*> objects) {
+void Scene::appendObjects(std::vector<GameObject*> objects) {
     for(auto object : objects){
         this->appendObject(object);
     }

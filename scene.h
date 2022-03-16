@@ -12,7 +12,7 @@ public:
     }
 
     void appendObject(GameObject* object);
-    void appendobjects(std::vector<GameObject*> objects);
+    void appendObjects(std::vector<GameObject*> objects);
     void appendWalls();
     void initMap();
     ~Scene();

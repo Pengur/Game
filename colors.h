@@ -35,5 +35,7 @@
 #    define BRIGHT_CYAN_BG    106
 #    define BRIGHT_WHITE_FG   97
 #    define BRIGHT_WHITE_BG   107
+
+    void setColor(char color);
 #
 #endif

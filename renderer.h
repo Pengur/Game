@@ -5,13 +5,16 @@
 #include "gameObject.h"
 #include <vector>
 
-#define mapWidth 20
-#define mapHeight 20
+#define mapWidth 200
+#define mapHeight 200
+#define cameraHeight 20
+#define cameraWidth 20
+
 
 class Renderer {
 public:
     std::vector<GameObject*> objects;
     void draw(GameObject* object);
     void draw(std::vector<GameObject*> objects);
-    void flush();
+    void flush(GameObject* camera);
 };
