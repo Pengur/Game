@@ -11,6 +11,7 @@ public:
         return objects;
     }
 
+
     void appendObject(GameObject* object);
     void appendObjects(std::vector<GameObject*> objects);
     void appendWalls();

@@ -1,4 +1,6 @@
 #pragma once
+
+#include <vector>
 #include "gameObject.h"
 #include "colors.h"
 
@@ -12,5 +14,8 @@ public:
         this->priority = 3;
     }
 
-    void move(char move);
+//    std::vector<Item*> items;
+//    for future updates
+    bool isValid(int x, int y, std::vector<GameObject*>* objects);
+    void move(char move, std::vector<GameObject*>* objects);
 };

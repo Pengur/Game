@@ -2,8 +2,8 @@
 
 #include <iostream>
 #include <vector>
-#include "gameObject.h"
 #include <vector>
+#include "gameObject.h"
 
 #define mapWidth 200
 #define mapHeight 200

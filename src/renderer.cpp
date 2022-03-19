@@ -45,6 +45,7 @@ void Renderer::flush(GameObject* camera){
         for(int x = 0; x < cameraWidth; x++){
             setColor(map[x][y]->color | RESET);
             std::cout << map[x][y]->sign << " ";
+            setColor(RESET);
         }
             std::cout << "\n";
     }

@@ -20,7 +20,7 @@ void enableEnter(){
 
 
 int main() {
-    disableEnter();
+//    disableEnter();
     Scene scene;
     Renderer renderer;
     Player *player = new Player();
@@ -34,10 +34,16 @@ int main() {
         renderer.flush(player);
 //        usleep(500);
         move = getchar();
-        while(getchar()){}
-        player->move(move);
+        player->move(move, &scene.objects);
+
+//when player hold button for running player can't stop moving
+//I don't know any solution, so I had to comment disableEnter
+//now you have to press enter after every move
+//feel free to uncomment but playing this way is not comfortable
+
         renderer.clear();
     }
-    enableEnter();
+//    enableEnter();
+    setColor(RESET);
     return 0;
 }
